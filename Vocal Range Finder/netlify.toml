@@ -1,9 +1,0 @@
-[build]
-  publish = "/"
-  command = ""
-
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' *.youtube.com; media-src 'self' mediastream:; connect-src 'self' mediastream:;"
