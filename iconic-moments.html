@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconic Vocal Moments</title>
+    <style>
+        :root {
+            --primary-color: #B794F4;
+            --secondary-color: #9F7AEA;
+            --background-color: #0F172A;
+            --surface-color: #1E293B;
+            --text-color: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --accent-color: #7C3AED;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .timeline {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(183, 148, 244, 0.2);
+        }
+
+        .moments {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .moments::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .moment {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+        }
+
+        .moment::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 4px solid var(--background-color);
+        }
+
+        .year {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .song {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
+        .artist {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .details {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+
+        .note-info {
+            display: inline-block;
+            background: rgba(124, 58, 237, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-top: 1rem;
+        }
+
+        .fun-fact {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 1rem;
+            }
+
+            .song {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <h3 class="title">Iconic Vocal Moments in Music History</h3>
+        <div class="moments">
+            <div class="moment">
+                <div class="year">1991</div>
+                <div class="song">Emotions</div>
+                <div class="artist">Mariah Carey</div>
+                <div class="details">
+                    The song features Mariah's signature whistle register, hitting an incredible G7 note - one of the highest notes ever recorded in popular music.
+                    <div class="note-info">Highest Note: G7 (3136 Hz)</div>
+                    <div class="fun-fact">This note is so high it's beyond the range of many musical instruments!</div>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="year">1991</div>
+                <div class="song">The Star-Spangled Banner</div>
+                <div class="artist">Whitney Houston</div>
+                <div class="details">
+                    Whitney's Super Bowl XXV performance is considered one of the greatest renditions of the national anthem ever, featuring her powerful sustained notes and perfect pitch.
+                    <div class="note-info">Highest Note: E5 (659 Hz)</div>
+                    <div class="fun-fact">This performance was released as a single and reached the Top 20 on the Billboard Hot 100.</div>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="year">1975</div>
+                <div class="song">Bohemian Rhapsody</div>
+                <div class="artist">Queen (Freddie Mercury)</div>
+                <div class="details">
+                    This masterpiece showcases Freddie's incredible 4-octave range, from F2 to F6, with seamless transitions between different vocal styles.
+                    <div class="note-info">Range: F2 (87 Hz) to F6 (1397 Hz)</div>
+                    <div class="fun-fact">The song's operatic section took over 180 separate overdubs to complete!</div>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="year">1987</div>
+                <div class="song">Welcome to the Jungle</div>
+                <div class="artist">Guns N' Roses (Axl Rose)</div>
+                <div class="details">
+                    Features Axl's signature screams and one of the widest vocal ranges in rock music, spanning nearly 6 octaves.
+                    <div class="note-info">Range: F1 (44 Hz) to Bb6 (1867 Hz)</div>
+                    <div class="fun-fact">Axl Rose has the largest vocal range of any known popular music singer!</div>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="year">1983</div>
+                <div class="song">Thriller</div>
+                <div class="artist">Michael Jackson</div>
+                <div class="details">
+                    Demonstrates Michael's incredible vocal control and ability to switch between chest voice and falsetto seamlessly.
+                    <div class="note-info">Range: Eb2 (78 Hz) to Eb6 (1245 Hz)</div>
+                    <div class="fun-fact">Michael's vocal hiccups and gasps became his signature style elements.</div>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="year">2013</div>
+                <div class="song">The Way</div>
+                <div class="artist">Ariana Grande</div>
+                <div class="details">
+                    Introduced Ariana's impressive whistle register to mainstream audiences, drawing comparisons to Mariah Carey.
+                    <div class="note-info">Range: D3 (147 Hz) to E7 (2637 Hz)</div>
+                    <div class="fun-fact">Ariana can sing in all 5 vocal registers: whistle, falsetto, head, mixed, and chest!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
